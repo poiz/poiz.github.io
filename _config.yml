@@ -9,7 +9,7 @@ markdown: redcarpet
 # Themes are encouraged to use these universal variables 
 # so be sure to set them if your theme uses them.
 #
-title : 小心码农
+title : 码农日记
 tagline: Hello, world!
 author :
   name : Hansen
