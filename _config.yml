@@ -26,6 +26,10 @@ tools:
 links:
   - title: About
     url: /about
+  - title: Categories
+    url: /categories
+  - title: Archive
+    url: /archive
   - title: Github
     url: https://github.com/poiz
     external: true
@@ -88,4 +92,14 @@ exclude: ["lib", "config.rb", "Capfile", "config", "log", "Rakefile", "Rakefile.
   sharing :
     provider : false
     
+  # Settings for comments helper
+  # Set 'provider' to the comment provider you want to use.
+  # Set 'provider' to false to turn commenting off globally.
+  #
+  comments :
+    provider : disqus
+    disqus :
+      short_name : haxxen
+
+
 
