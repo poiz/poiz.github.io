@@ -66,10 +66,10 @@ exclude: ["lib", "config.rb", "Capfile", "config", "log", "Rakefile", "Rakefile.
   # Some JB helpers refer to these paths; change them here if needed.
   #
   archive_path: /archive.html
-  categories_path : /categories.html
-  tags_path : /tags.html
-  atom_path : /atom.xml
-  rss_path : /rss.xml
+  categories_path: /categories.html
+  tags_path: /tags.html
+  atom_path: /atom.xml
+  rss_path: /rss.xml
    
   # Settings for analytics helper
   # Set 'provider' to the analytics provider you want to use.
