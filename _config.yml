@@ -7,10 +7,13 @@ canonical:        http://poiz.github.io
 owner:
   name:           Hansen Min
   avatar:         avatar.png
-  email:          gallant.omni*gmail.com
+  email:          gallant.omni@gmail.com
+  email1:         gallant.omni
+  email2:         gmail
+  email3:         com
   weibo:          53606360
   github:         poiz
-  disqus:         haxxen
+  disqus:         haxxen-poiz-io
   location:       "Shanghai, China"
 
 tools:
