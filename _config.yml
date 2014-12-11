@@ -1,20 +1,20 @@
-title:            Balzac
-tagline:          A beautiful theme.
-description:      Describe your website.
-canonical: http://jekyll.gtat.me
+title:            码农日志
+tagline:          Enjoy coding, enjoy cooking.
+description:      一个码农的日常.
+canonical: http://poiz.github.io
 
 # Owner/author information
 owner:
-  name:           Cole Townsend
+  name:           Hansen Min
   avatar:         avatar.png
-  bio:            "Aesthete & Athlete"
-  email:          cole@coletownsend.com
-  twitter:        twnsndco
-  github:         coletownsend
-  instagram:      ctrunsthis
-  dribbble:       coletownsend
-  disqus:         balzac
-  location:       "Buffalo, NY"
+  #bio:            "Aesthete & Athlete"
+  email:          gallant.omni#gmail.com
+  #twitter:        twnsndco
+  github:         poiz
+  #instagram:      ctrunsthis
+  #dribbble:       coletownsend
+  #disqus:         balzac
+  location:       "Shanghai, China"
   # Plug in your disqus shortname!
 
 tools:
@@ -27,14 +27,14 @@ links:
   - title: About
     url: /about
   - title: Github
-    url: https://github.com/ColeTownsend/Balzac-for-Jekyll
+    url: https://github.com/poiz
     external: true
-  - title: Cole Who?
-    url: http://coletownsend.com
+  - title: Poiz
+    url: http://www.poiz.tk
     external: true
 
 # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
-timezone:    America/New_York
+timezone:    Asia/Shanghai
 future:      true
 highlighter: pygments
 markdown:    kramdown
