@@ -18,6 +18,6 @@ image:
 
 ##Information
 * Shanghai, China
-* [Weibo](http://weibo.com/53606360)
+* [Sina Weibo](http://weibo.com/53606360)
 
 

@@ -16,10 +16,10 @@
             <script type="text/javascript" >
             function poizFaYouJian(a,b,c) { window.location.href="mailto:" + a + "@" + b + "." + c;}
             </script>
-            <li><a id="mail" href="poizFaYouJian('{{ site.owner.email1 }}','{{ site.owner.email2 }}','{{ site.owner.email3 }}')"><span class="foot-link"><script type="text/javascript" >document.write('{{ site.owner.email1 }}');document.write('@');document.write('{{ site.owner.email2 }}');document.write('.');document.write('{{ site.owner.email3 }}')</script></span></a></li>
+            <li><a id="mail" href="javascript:void(0);" onclick="poizFaYouJian('{{ site.owner.email1 }}','{{ site.owner.email2 }}','{{ site.owner.email3 }}')"><span class="foot-link">Contact Me</span></a></li>
 
             {% if site.owner.weibo %}
-            <li><a id="weib" href="http://weibo.com/{{ site.owner.weibo }}" target="_blank"><span class="foot-link">Weibo</span></a></li>
+            <li><a id="weib" href="http://weibo.com/{{ site.owner.weibo }}" target="_blank"><span class="foot-link">Sina Weibo</span></a></li>
             {% endif %}
         </ul>
     </div>
