@@ -1,21 +1,17 @@
 title:            码农日志
 tagline:          Enjoy coding, enjoy cooking.
 description:      一个码农的日常.
-canonical: http://poiz.github.io
+canonical:        http://poiz.github.io
 
 # Owner/author information
 owner:
   name:           Hansen Min
   avatar:         avatar.png
-  #bio:            "Aesthete & Athlete"
-  email:          gallant.omni#gmail.com
-  #twitter:        twnsndco
+  email:          gallant.omni*gmail.com
+  weibo:          53606360
   github:         poiz
-  #instagram:      ctrunsthis
-  #dribbble:       coletownsend
-  #disqus:         balzac
+  disqus:         haxxen
   location:       "Shanghai, China"
-  # Plug in your disqus shortname!
 
 tools:
   standards:      "HTML, SCSS, Jekyll"
@@ -83,23 +79,6 @@ exclude: ["lib", "config.rb", "Capfile", "config", "log", "Rakefile", "Rakefile.
 #    provider : google 
 #    google : 
 #        tracking_id : 'UA-57477044-1'
-
-  # Settings for sharing helper. 
-  # Sharing is for things like tweet, plusone, like, reddit buttons etc.
-  # Set 'provider' to the sharing provider you want to use.
-  # Set 'provider' to false to turn sharing off globally.
-  #
-  sharing :
-    provider : false
-    
-  # Settings for comments helper
-  # Set 'provider' to the comment provider you want to use.
-  # Set 'provider' to false to turn commenting off globally.
-  #
-  comments :
-    provider : disqus
-    disqus :
-      short_name : haxxen
 
 
 
