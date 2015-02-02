@@ -60,6 +60,7 @@ blockquote {
     border-left: 10px solid #ccc;
     background: #ececec;
     padding: $lh/2;
+    overflow: auto;
 }
 
 blockquote p {
