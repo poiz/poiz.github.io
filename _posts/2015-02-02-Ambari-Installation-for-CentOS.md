@@ -137,9 +137,14 @@ Download Ambari tarballs in one packaged by Horntonworks
     wget -nv http://public-repo-1.hortonworks.com/HDP/centos6/HDP-2.2.0.0-centos6-rpm.tar.gz
     wget -nv http://public-repo-1.hortonworks.com/HDP-UTILS-1.1.0.20/repos/centos6/HDP-UTILS-1.1.0.20-centos6.tar.gz
 
-Extract each package to __/home/user/repo.local__ . The folder structure may like:
 
-    ---/home/user/repo.local
+Install httpd service on your local repository server:
+
+    sudo yum install -y httpd
+
+Extract each package to __/var/www/html/repository__ . The folder structure may like:
+
+    ---/var/www/html/repository
       |--ambari_1.x
       |--HDP
       |--HDP-UTILS-1.1.0.20
@@ -148,19 +153,12 @@ Create local repository
 
     sudo yum install -y createrepo
 
-    cd /home/user/repo.local
+    cd /var/www/html
     createrepo -v ambari_1.x
     createrepo -v HDP
     createrepo -v HDP-UTILS-1.1.0.20
 
-Install httpd service on your local repository server:
-
-    sudo yum install -y httpd
-
-    cd /var/www/html
-    link -s /repository /home/user/repo.local
-
-Create repo files:
+Create .repo files:
 
     vim ambari.repo
 
@@ -190,7 +188,7 @@ Create repo files:
 >enabled=1
 >gpgcheck=0
 
-Copy these three repo files to each node
+Copy these three .repo files to each node
 
     scp ambari.repo root@hdp-client:/etc/yum.repos.d/ambari.repo
     scp HDP.repo root@hdp-client:/etc/yum.repos.d/HDP.repo
@@ -216,38 +214,38 @@ Install ambari-agent service to each node
 
 Access [http://ambari-server-hostname:8080/](http://ambari-server-hostname:8080/)
 
-![Ambari installation login page](../images/20150202/ambari-installation-01.png)
+![Ambari installation login page](/images/20150202/ambari-installation-01.png)
 
 
 __Username__: admin
 __Password__: admin
 
-![Login into installation](../images/20150202/ambari-installation-02.png)
+![Login into installation](/images/20150202/ambari-installation-02.png)
 
 
 Welcome page of Apache Ambari.
 
-![Welcome page](../images/20150202/ambari-installation-03.png)
+![Welcome page](/images/20150202/ambari-installation-03.png)
 
 
 Click __Launch Install Wizard__ to start installing Ambari.
 
-![Launch install wizard](../images/20150202/ambari-installation-04.png)
+![Launch install wizard](/images/20150202/ambari-installation-04.png)
 
 
 Give a name to you Hadoop cluster.
 
-![Name a Hadoop cluster](../images/20150202/ambari-installation-05.png)
+![Name a Hadoop cluster](/images/20150202/ambari-installation-05.png)
 
 
 Type a name and click __Next__ button.
 
-![Create a Hadoop cluster with name 'xrshadoop'](../images/20150202/ambari-installation-06.png)
+![Create a Hadoop cluster with name 'xrshadoop'](/images/20150202/ambari-installation-06.png)
 
 
 Select HDP([Hortonworks Data Platform](http://hortonworks.com/)) version. At this moment, the latest version is 2.2. 
 
-![Choose HDP version](../images/20150202/ambari-installation-07.png)
+![Choose HDP version](/images/20150202/ambari-installation-07.png)
 
 
 The sub module versions of HDP 2.2.
@@ -257,7 +255,7 @@ The sub module versions of HDP 2.2.
 
 Modify the repository to local.
 
-![Set yum repository to the local repository](../images/20150202/ambari-installation-08.png)
+![Set yum repository to the local repository](/images/20150202/ambari-installation-08.png)
 
 
 Add hostnames of all your nodes.
@@ -266,58 +264,58 @@ _One hostname, one line._
 
 Add SSH private key of the node which __ambari-server__ installed. And don't forget modify the user name which could access __sudo__ without password.
 
-![Hostname and SSH access](../images/20150202/ambari-installation-09.png)
+![Hostname and SSH access](/images/20150202/ambari-installation-09.png)
 
 
 Register ambari-agent service to ambari-server.
 
-![Register ambari-agent service to ambari-server](../images/20150202/ambari-installation-10.png)
+![Register ambari-agent service to ambari-server](/images/20150202/ambari-installation-10.png)
 
 
 Validate ambari-agent of all nodes.
 
-![Finish communication](../images/20150202/ambari-installation-11.png)
+![Finish communication](/images/20150202/ambari-installation-11.png)
 
 
 Choose Hadoop services to be installed.
 
-![Choose Hadoop services](../images/20150202/ambari-installation-12.png)
+![Choose Hadoop services](/images/20150202/ambari-installation-12.png)
 
-![Choose Hadoop services](../images/20150202/ambari-installation-13.png)
+![Choose Hadoop services](/images/20150202/ambari-installation-13.png)
 
 
 Assign master of all Hadoop services which you chosen.
 
-![Assign masters](../images/20150202/ambari-installation-14.png)
+![Assign masters](/images/20150202/ambari-installation-14.png)
 
-![Assign masters](../images/20150202/ambari-installation-15.png)
+![Assign masters](/images/20150202/ambari-installation-15.png)
 
 
 Assign DataNode/NodeManager.
 
 _**Performance Tip:** DataNode and NodeManager should better be chosen at the same node._
 
-![Assign slaves and clients](../images/20150202/ambari-installation-16.png)
+![Assign slaves and clients](/images/20150202/ambari-installation-16.png)
 
 
 Modify Hadoop services configuration, including data source, password, etc. You can just fill in all the red-bordered blanks. You can change any of them after installation.
 
-![Customize services](../images/20150202/ambari-installation-17.png)
+![Customize services](/images/20150202/ambari-installation-17.png)
 
 
 Installation and configuration list.
 
-![Installation list](../images/20150202/ambari-installation-18.png)
+![Installation list](/images/20150202/ambari-installation-18.png)
 
 
 Hadoop services are installing.
 
-![Installing](../images/20150202/ambari-installation-19.png)
+![Installing](/images/20150202/ambari-installation-19.png)
 
 
 A sample of finished installing Ambari Dashboard.
 
-![Installation finished](../images/20150202/ambari-installation-20.png)
+![Installation finished](/images/20150202/ambari-installation-20.png)
 
 
 ---
