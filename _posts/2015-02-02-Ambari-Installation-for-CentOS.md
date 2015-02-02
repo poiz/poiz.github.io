@@ -250,7 +250,7 @@ Select HDP([Hortonworks Data Platform](http://hortonworks.com/)) version. At thi
 
 The sub module versions of HDP 2.2.
 
-![Sub modules version]("http://hortonworks.com/wp-content/uploads/2014/12/hdp2.2-1024x428.png)
+![Sub modules version](http://hortonworks.com/wp-content/uploads/2014/12/hdp2.2-1024x428.png)
 
 
 Modify the repository to local.
