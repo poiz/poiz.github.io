@@ -51,16 +51,33 @@ small {
     background: $hilite;
 }
 
-blockquote, blockquote p {
-    font-style: italic;
-    line-height: 1.3em;
-    text-align: center;
-    color: lighten($black, .2);
+blockquote {
+    line-height: 2em;
+    color: #3c3c3c;
     margin-bottom: $lh;
+    font-size: 1em;
+    white-space: pre;
+    font-family: monospace;
+    border: 1px solid #ccc;
+    border-left: 10px solid #ccc;
+    background: #ececec;
+    padding: $lh/2;
+}
+
+blockquote p {
+    color: lighten($black, .2);
 }
 
 
 /*   Code Formatting    */
+
+pre {
+    border: 1px solid #ccc;
+    padding: $lh/2;
+    background-color: #ececec;
+    overflow: auto;
+    margin-bottom: $lh;
+}
 
 code {
     color: $accent;
