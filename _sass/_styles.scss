@@ -55,7 +55,6 @@ blockquote {
     line-height: 2em;
     color: #3c3c3c;
     margin-bottom: $lh;
-    font-size: 1em;
     white-space: pre;
     font-family: monospace;
     border: 1px solid #ccc;
@@ -66,6 +65,7 @@ blockquote {
 
 blockquote p {
     color: lighten($black, .2);
+    font-size: 1em;
 }
 
 
