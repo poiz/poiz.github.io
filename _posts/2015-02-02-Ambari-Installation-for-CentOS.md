@@ -208,6 +208,10 @@ Install ambari-agent service to each node
 
     sudo ambari-server setup
 
+###Start Ambari Server
+
+    sudo service ambari-server start
+
 ---
 
 ##Install with Apache Ambari WEB management
