@@ -35,13 +35,13 @@ Run Sqoop Action with Oozie.
                 </prepare>
                 <arg>import</arg>
                 <arg>--connect</arg>
-                <arg>jdbc:postgresql://192.168.184.197:5432/xrs_upper_lakes_foods_665</arg>
+                <arg>jdbc:postgresql://192.168.1.101:5432/dbname</arg>
                 <arg>--username</arg>
                 <arg>postgres</arg>
                 <arg>--password</arg>
-                <arg>abc123_</arg>
+                <arg>PWD!@#</arg>
                 <arg>--table</arg>
-                <arg>fact_fact_fleet_use_p2001_01</arg>
+                <arg>this_is_table_name</arg>
                 <arg>--split-by</arg>
                 <arg>vehicle_sk</arg>
                 <arg>--fields-terminated-by</arg>
