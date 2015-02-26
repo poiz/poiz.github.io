@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Head First Ooize Sqoop Action"
-description: "Setp by step to run an Oozie Sqoop action"
+description: "Step by step to run an Oozie Sqoop action"
 category: "bigdata"
 tags: ["bigdata", "hadoop", "oozie", "sqoop"]
 comments: true
