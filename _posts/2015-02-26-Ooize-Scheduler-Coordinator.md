@@ -20,16 +20,16 @@ Run Cron scheduled coordinator job with Oozie.
     oozie.use.system.libpath=true
     oozie.coord.application.path=${namenode}/user/hansen/oozie/test
 
-    xrs_workflow_path=${namenode}/user/hansen/oozie/test
+    poiz_workflow_path=${namenode}/user/hansen/oozie/test
 
     # job
-    xrs_job_mainclass=com.xrs.ignition.hadoop.common.ScheduleAction
+    poiz_job_mainclass=com.poiz.ignition.hadoop.common.ScheduleAction
 
-    xrs_schedular=0 0/1 * * *
-    xrs_schedular_interval=120
-    xrs_schedular_start=2015-02-11T08:00Z
-    xrs_schedular_end=2015-02-12T08:00Z
-    xrs_schedular_timezone=UTC
+    poiz_schedular=0 0/1 * * *
+    poiz_schedular_interval=120
+    poiz_schedular_start=2015-02-11T08:00Z
+    poiz_schedular_end=2015-02-12T08:00Z
+    poiz_schedular_timezone=UTC
 
 >hdfs/oozie_job_path/workflow.xml
 
@@ -41,8 +41,8 @@ Run Cron scheduled coordinator job with Oozie.
             <java>
                 <job-tracker>${yarn}</job-tracker>
                 <name-node>${namenode}</name-node>
-                <main-class>${xrs_job_mainclass}</main-class>
-                <arg>${xrs_schedular_interval}</arg>
+                <main-class>${poiz_job_mainclass}</main-class>
+                <arg>${poiz_schedular_interval}</arg>
             </java>
 
             <ok to="end" />
@@ -60,13 +60,13 @@ Run Cron scheduled coordinator job with Oozie.
 >hdfs/oozie_job_path/coordinator.xml
 
     <coordinator-app name="schedular-application" xmlns="uri:oozie:coordinator:0.2"
-        frequency="${xrs_schedular}"
-        start="${xrs_schedular_start}"
-        end="${xrs_schedular_end}"
-        timezone="${xrs_schedular_timezone}">
+        frequency="${poiz_schedular}"
+        start="${poiz_schedular_start}"
+        end="${poiz_schedular_end}"
+        timezone="${poiz_schedular_timezone}">
         <action>
             <workflow>
-                <app-path>${xrs_workflow_path}</app-path>
+                <app-path>${poiz_workflow_path}</app-path>
             </workflow>
         </action>
     </coordinator-app>
