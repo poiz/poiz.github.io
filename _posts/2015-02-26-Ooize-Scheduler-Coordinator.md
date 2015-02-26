@@ -78,4 +78,4 @@ Run Cron scheduled coordinator job with Oozie.
 
 3. Run Sqoop ooize job
 
-    sudo -u hdfs oozie job -oozie http://oozie-server-hostname:11000/oozie -config job.properties -submit
+        sudo -u hdfs oozie job -oozie http://oozie-server-hostname:11000/oozie -config job.properties -submit

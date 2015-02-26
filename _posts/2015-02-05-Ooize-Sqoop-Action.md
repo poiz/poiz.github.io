@@ -71,4 +71,4 @@ Run Sqoop Action with Oozie.
 
 3. Run Sqoop ooize job
 
-    sudo -u hdfs oozie job -oozie http://oozie-server-hostname:11000/oozie -config job.properties -run
+        sudo -u hdfs oozie job -oozie http://oozie-server-hostname:11000/oozie -config job.properties -run
